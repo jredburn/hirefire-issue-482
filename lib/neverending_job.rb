@@ -1,4 +1,4 @@
-class NeverendingJob
+class NeverendingJob < Struct.new(:minutes)
 
   def perform
     loop do

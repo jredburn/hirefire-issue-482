@@ -1,9 +1,9 @@
-class ExportJob < Struct.new
+class NeverendingJob
 
   def perform
     loop do
-      sleep 60
       Rails.logger.info("Still here")
+      sleep 60
     end
   end
 
